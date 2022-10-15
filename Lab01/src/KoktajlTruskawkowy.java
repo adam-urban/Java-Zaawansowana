@@ -6,16 +6,14 @@ package Lab01.src;
 
 
 
-public class KoktajlTruskawkowy extends Koktajl implements Smakowalne{
+public class KoktajlTruskawkowy extends KoktajlSmakowy implements Smakowalne{
 
     private final RodzajeTruskawki rodzajTruskawki;
-    private final RodzajSmaku rodzajSmaku;
     public KoktajlTruskawkowy(
             final int kcal,
             final RodzajeTruskawki rodzajTruskawki){
-        super(kcal);
+        super(kcal, RodzajSmaku.TRUSKAWKOWY);
         this.rodzajTruskawki = rodzajTruskawki;
-        this.rodzajSmaku = RodzajSmaku.TRUSKAWKOWY;
     };
     
     @Override 
@@ -25,6 +23,6 @@ public class KoktajlTruskawkowy extends Koktajl implements Smakowalne{
 
     @Override
     public RodzajSmaku smak(){
-        return this.rodzajSmaku;
+        return super.smak();
     }
 }
