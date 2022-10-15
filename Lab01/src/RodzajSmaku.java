@@ -18,25 +18,25 @@ package Lab01.src;
  */
 
 public enum RodzajSmaku {
-    TRUSKAWKOWY("truskawkowy", POZIOM_SLODKOSCI.BARDZO_SLODKI),
-    BANANOWY("bananowy", POZIOM_SLODKOSCI.MALO_SLODKI),
-    SZPINAKOWY("szpinakowy", POZIOM_SLODKOSCI.NIESLODKI),
-    CIASTECZKOWY("ciasteczkowy", POZIOM_SLODKOSCI.BARDZO_SLODKI),
-    JABLKOWY("jablkowy", POZIOM_SLODKOSCI.SLODKI);
+    TRUSKAWKOWY("truskawkowy", PoziomSlodkosci.BARDZO_SLODKI),
+    BANANOWY("bananowy", PoziomSlodkosci.MALO_SLODKI),
+    SZPINAKOWY("szpinakowy", PoziomSlodkosci.NIESLODKI),
+    CIASTECZKOWY("ciasteczkowy", PoziomSlodkosci.BARDZO_SLODKI),
+    JABLKOWY("jablkowy", PoziomSlodkosci.SLODKI);
 
-    RodzajSmaku(final String nazwa, POZIOM_SLODKOSCI poziom_slodkosci){
+    RodzajSmaku(final String nazwa, PoziomSlodkosci poziomSlodkosci){
         this.nazwa = nazwa;
-        this.poziom_slodkosci = poziom_slodkosci;
+        this.poziom_slodkosci = poziomSlodkosci;
     }
     private final String nazwa;
-    private final POZIOM_SLODKOSCI poziom_slodkosci;
+    private final PoziomSlodkosci poziom_slodkosci;
 
     public String getNazwa(){ return this.nazwa;}
-    public POZIOM_SLODKOSCI getPoziom_slodkosci(){ return this.poziom_slodkosci;}
+    public PoziomSlodkosci getPoziomSlodkosci(){ return this.poziom_slodkosci;}
 
     @Override
     public String toString(){
-        return "" + getNazwa() + " Poziom słodkosci " + getPoziom_slodkosci();
+        return "" + getNazwa() + " Poziom słodkosci " + getPoziomSlodkosci();
     }
 
 }

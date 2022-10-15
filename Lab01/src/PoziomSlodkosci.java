@@ -1,6 +1,6 @@
 package Lab01.src;
 
-public enum POZIOM_SLODKOSCI {
+public enum PoziomSlodkosci {
     NIESLODKI,
     MALO_SLODKI,
     SLODKI,
