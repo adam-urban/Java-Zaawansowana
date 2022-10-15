@@ -12,11 +12,10 @@ public class KoktajlTruskawkowy extends Koktajl implements Smakowalne{
     private final RodzajSmaku rodzajSmaku;
     public KoktajlTruskawkowy(
             final int kcal,
-            final RodzajeTruskawki rodzajTruskawki,
-            final RodzajSmaku rodzajSmaku){
+            final RodzajeTruskawki rodzajTruskawki){
         super(kcal);
         this.rodzajTruskawki = rodzajTruskawki;
-        this.rodzajSmaku = rodzajSmaku;
+        this.rodzajSmaku = RodzajSmaku.TRUSKAWKOWY;
     };
     
     @Override 
