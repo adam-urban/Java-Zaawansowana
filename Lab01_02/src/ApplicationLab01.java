@@ -4,7 +4,7 @@ public class ApplicationLab01 {
     
     public static void main(String[] args) {
         
-        KoktajlTruskawkowy k = new KoktajlTruskawkowy(10, RodzajeTruskawki.ANANASOWA);
+        KoktajlSmakowy k = new KoktajlSmakowy(20, RodzajSmaku.BANANOWY);
 
         k.pij();
         System.out.println(k.smak());

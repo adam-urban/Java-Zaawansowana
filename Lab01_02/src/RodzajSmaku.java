@@ -11,7 +11,8 @@ public enum RodzajSmaku {
     private final String nazwa;
     private final PoziomSlodkosci poziom_slodkosci;
 
-    RodzajSmaku(final String nazwa, PoziomSlodkosci poziomSlodkosci){
+    RodzajSmaku(final String nazwa,
+                PoziomSlodkosci poziomSlodkosci){
         this.nazwa = nazwa;
         this.poziom_slodkosci = poziomSlodkosci;
     }
@@ -21,9 +22,11 @@ public enum RodzajSmaku {
     
     public PoziomSlodkosci getPoziomSlodkosci(){ return this.poziom_slodkosci;}
 
+
+
     @Override
     public String toString(){
-        return "" + getNazwa() + " Poziom słodkosci " + getPoziomSlodkosci();
+        return "" + getNazwa() + " Poziom slodkosci " + getPoziomSlodkosci();
     }
 
 }
