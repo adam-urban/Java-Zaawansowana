@@ -32,6 +32,7 @@ public class KoktajlSmakowy extends Koktajl implements Smakowalne {
     }
 
 
+
     public ZrodloSmaku zrodloSmaku() {
         return switch( this.rodzajSmaku){
             case TRUSKAWKOWY -> ZrodloSmaku.OWOCOWY;
@@ -42,4 +43,19 @@ public class KoktajlSmakowy extends Koktajl implements Smakowalne {
         };
     }
 
+//    public ZrodloSmaku zrodloSmaku(){
+//        final ZrodloSmaku zrodloSmaku;
+//        switch (this.rodzajSmaku){
+//            case TRUSKAWKOWY:
+//            case BANANOWY:
+//            case JABLKOWY:
+//                return ZrodloSmaku.OWOCOWY;
+//            case SZPINAKOWY:
+//                return ZrodloSmaku.WARZYWNY;
+//            case CIASTECZKOWY:
+//                return ZrodloSmaku.INNY;
+//            default:
+//                throw new IllegalStateException();
+//        }
+//   }
 }
